@@ -1,66 +1,44 @@
 # Siora — Context-Aware AI Learning Companion
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](#)
-[![Manifest](https://img.shields.io/badge/Chrome_MV3-Compliant-success.svg)](#)
-[![Backend](https://img.shields.io/badge/FastAPI-Production_Ready-009688.svg)](#)
-[![Database](https://img.shields.io/badge/PostgreSQL-ACID_Persisted-336791.svg)](#)
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
 
-> **Siora is an intelligent, context-aware AI learning companion embedded directly into the browser workflow.**  
-> It dynamically perceives the active learning resource—understanding playback progression, video context, and student dialogue in real time—delivering zero-friction conceptual grounding without requiring users to manually copy, paste, or explain their learning material.
+![Manifest](https://img.shields.io/badge/Chrome_MV3-Compliant-success.svg)
 
----
+# Siora — AI-Powered Learning Companion
 
-## 🎯 Executive Overview
+> Learn smarter with an AI companion that understands what you're learning, right inside your browser.
 
-Modern online learners lose significant cognitive momentum switching between educational content (lectures, tutorials, technical documentation) and external AI chat interfaces. Standard chatbots operate with complete blindness to the user's active viewport, requiring repetitive manual prompting and context setting.
+Siora is a context-aware AI learning companion designed to make online learning more interactive and personalized. It integrates directly into the browser, allowing students to ask questions, explore concepts and receive contextual explanations without interrupting their learning workflow.
 
-**Siora eliminates this friction entirely.** Built on a high-performance Chrome Manifest V3 architecture and an enterprise-grade backend infrastructure, Siora establishes an intelligent, non-intrusive side-panel workspace that operates synchronously alongside the student's active study sessions.
+## Key Features
 
----
+- **Context-Aware Assistance:** Understands the educational content you're currently viewing, including YouTube videos, playback timestamps and selected text.
+- **Interactive AI Tutoring:** Get explanations, examples and answers to questions grounded in your learning material.
+- **Conversational Memory:** Maintain persistent conversations and continue learning without repeatedly providing context.
+- **Seamless Browser Integration:** Access Siora through a dedicated Chrome side panel with tab-aware behaviour.
+- **Secure & Responsive Interface:** Minimal learning-focused UI with light and dark themes and sanitized Markdown rendering.
 
-## 💎 Core Capabilities & Value Proposition
+## Technology Stack
 
-### 1. Zero-Friction Context Awareness
-- **Real-Time Viewport Telemetry:** Dynamically synchronizes with the active media player, tracking precise temporal playback, canonical resource identification, and live user interactions.
-- **Asymmetric Context Ingestion:** Eliminates token bloat and latency spikes by surgically isolating and extracting high-signal narrative windows relevant to the student’s exact moment of inquiry.
+| Domain            | Technologies                             |
+| ----------------- | ---------------------------------------- |
+| Browser Extension | Chrome Extension Manifest V3, JavaScript |
+| Frontend          | Vite, CSS, Marked.js, DOMPurify          |
+| Backend           | Python, FastAPI, Pydantic                |
+| Database          | PostgreSQL, SQLAlchemy                   |
+| AI Integration    | LLM APIs, OpenAI-compatible API gateway  |
 
-### 2. Isolated Per-Tab Side Panel Architecture
-- **Tab-Scoped Lifecycle Management:** Unlike conventional extensions that bleed across windows or force intrusive popups, Siora isolates state, memory, and UI lifecycle strictly to the target educational tab.
-- **Synchronous Port Management:** Leverages persistent runtime connection channels for seamless session toggling, zero-latency state recovery, and automatic background cleanup.
+## Product Preview
 
-### 3. Stateful Multi-Turn Conversational Memory
-- **Relational Persistence Layer:** Backed by an ACID-compliant PostgreSQL relational core, ensuring student interactions, conceptual inquiries, and AI pedagogical responses survive browser and session restarts.
-- **Chronological Dialogue Assembly:** Resolves complex conversational coreferences and follow-up inquiries through clean, isolated conversational state tracking.
+## Project Status
 
-### 4. High-Availability Resilient Inference Pipeline
-- **Hierarchical Fallback Routing:** Enterprise-grade routing gateway designed to survive upstream provider rate limits, regional outages, or latency spikes through automatic multi-tier fallback orchestration.
-- **Strict Role Separation & Prompt Hygiene:** Implements rigorous data-contract boundaries to prevent synthetic pattern leakage and guarantee hallucination-free output structure.
+Siora is an independently developed project under active development, with ongoing work focused on contextual retrieval, persistent learning memory and personalized learning experiences.
 
-### 5. Secure & Performant Client Experience
-- **Client-Side Sanitization:** Complete multi-stage parsing pipeline rendering mathematically clean technical markdown while neutralizing XSS vulnerabilities via enterprise DOM sanitization standards.
-- **Adaptive Visual System:** Fully integrated CSS variable design engine supporting high-contrast light and dark study environments.
+## Links
 
----
-
-## 🏛️ High-Level Technical Stack
-
-| Domain | Technologies |
-| :--- | :--- |
-| **Client Interface** | Chrome Manifest V3, ES Modules, Custom Design Tokens, Vite Engine |
-| **Document Processing** | Marked.js, DOMPurify, Web Components |
-| **Core Services** | Python 3.11+, FastAPI (Asynchronous ASGI Engine), Pydantic v2 |
-| **Persistence & ORM** | PostgreSQL, SQLAlchemy 2.0 (Thread-pooled session factory) |
-| **Network & Transport** | HTTP/2, Asynchronous HTTPX Client, Chrome Port Messaging Protocol |
-| **Inference Gateway** | Multi-Tier Orchestration / OpenAI-Compatible Routing Layer |
+- **Developer:** [Your GitHub Profile](https://github.com/YOUR_USERNAME)
+- **Demo:** Coming soon
 
 ---
 
-## 🔒 Security & Proprietary Notice
-
-Siora is a proprietary software product. This repository contains the source code for the client-facing browser integration and foundational service interface. Proprietary algorithmic models, context orchestration pipelines, adaptive learning engines, and internal infrastructure designs are strictly reserved.
-
----
-
-## ⚖️ License & Rights
-
-© 2026 Siora. All rights reserved. Unauthorized reproduction, distribution, reverse engineering, or commercial exploitation of this software and its proprietary components is strictly prohibited.
+© 2026 Siora. All rights reserved.
