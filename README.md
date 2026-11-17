@@ -30,14 +30,16 @@ Siora is a context-aware AI learning companion designed to make online learning 
 
 ## Product Preview
 
+Coming soon..
+
 ## Project Status
 
 Siora is an independently developed project under active development, with ongoing work focused on contextual retrieval, persistent learning memory and personalized learning experiences.
 
 ## Links
 
-- **Developer:** [Your GitHub Profile](https://github.com/YOUR_USERNAME)
-- **Demo:** Coming soon
+- **Email: <!---->**[purveshpatil442@gmail.com](purveshpatil442\\@gmail.com)
+- **Demo:** Coming soon..
 
 ---
 
