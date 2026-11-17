@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siora</title>
+    <link rel="stylesheet" href ="sidepanel.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+
+</head>
+
+<body>
+
+    <header class="app-header">
+        <!-- Group 1: Left Brand Area -->
+        <div class="brand">
+
+            <span class="material-symbols-outlined logo-icon">auto_stories</span> <!--logo placeholder -->
+            <h1 class="brand-title">Siora</h1>
+
+        </div>
+
+        <!-- Group 2: Right Action Buttons -->
+        <div class="header-actions">
+            <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme">
+
+                <span class="material-symbols-outlined">
+                    dark_mode
+                </span>
+
+            </button>
+
+            <button class="icon-btn" title="More Options">
+
+                <span class="material-symbols-outlined">
+                    more_vert
+                </span>
+
+            </button>
+        </div>
+
+    </header>
+
+    <div class="active-context">
+        <span class="material-symbols-outlined">
+            article
+        </span>
+        <span class="context-title">Introduction to Microeconomics Agar hum isko handle nahi karenge, toh 2 problems
+            hongi:</span>
+    </div>
+
+    <main class="chat-container">
+
+        <div class="welcome-section">
+
+            <div class="welcome-header">
+
+                <h2>What do you want to learn?</h2>
+                <p>Ask anything about this document or try these suggestions:</p>
+            </div>
+
+            <div class="suggested-prompts">
+                <button class="prompt-chip">
+
+                    <span>Summarize key concepts</span>
+                    <span class="material-symbols-outlined chip-icon">north_east</span>
+
+                </button>
+
+                <button class="prompt-chip">
+                    <span>Explain difficult terms</span>
+                    <span class="material-symbols-outlined chip-icon">north_east</span>
+                </button>
+
+                <button class="prompt-chip">
+                    <span>Generate 5 practice questions</span>
+                    <span class="material-symbols-outlined chip-icon">north_east</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="message user-message">
+            <div class="bubble">
+                <p>Can you summarize the concept of opportunity cost mentioned around the 5-minute mark?</p>
+            </div>
+
+        </div>
+        <div class="message ai-message">
+           
+            <!-- Part 2: Answer Card -->
+            <div class="card">
+                <p>In the video at 5:12, opportunity cost is defined as the value of the next best alternative forgone.
+                </p>
+                <!-- Optional Action Chip (e.g. Jump to timestamp) -->
+                <div class="message-actions">
+                    <button class="action-chip">
+                        <span class="material-symbols-outlined">play_circle</span>
+                        Jump to 5:12
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="composer-area">
+    <!-- 1. Context Switch Row -->
+    <div class="context-toggle-row">
+        <label class="switch-label">
+            <input type="checkbox" id="context-toggle" class="toggle-input" checked>
+            <span class="slider"></span>
+            <span class="toggle-text">Reference current page</span>
+        </label>
+    </div>
+
+    <!-- 2. Input Box & Toolbar -->
+    <div class="input-box-wrapper">
+        <textarea id="user-input" placeholder="Ask Siora..." rows="1"></textarea>
+
+        <div class="input-toolbar">
+            <div class="toolbar-left">
+                <button class="icon-btn-sm" title="Attach file">
+                    <span class="material-symbols-outlined">attach_file</span>
+                </button>
+                <button class="icon-btn-sm" title="Take note">
+                    <span class="material-symbols-outlined">edit_note</span>
+                </button>
+            </div>
+
+            <button id="send-btn" class="send-btn">
+                <span>Send</span>
+                <span class="material-symbols-outlined">arrow_upward</span>
+            </button>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="sidepanel.js"></script>
+</body>
+
+</html>

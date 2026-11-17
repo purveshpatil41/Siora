@@ -1,0 +1,34 @@
+{
+    "name": "Siora",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "description": "An AI that sees and understands your learning context.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "sidePanel",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*.youtube.com/*"
+    ],
+    "action": {},
+    "side_panel": {
+        "default_path": "sidepanel.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
+
