@@ -31,8 +31,9 @@ plans/
 HANDOFF.md
 stitch_siora/
 
-# Agent configs
+# Agent configs & guidelines
 .agents/
+AGENTS.md
 
 # Logs
 *.log
